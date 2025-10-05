@@ -125,6 +125,118 @@
   margin-bottom: 1rem;
 }
 
+.upcoming-event {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.upcoming-event h2 {
+  font-size: 2rem;
+  color: #6b1b9a;
+  margin-bottom: 20px;
+}
+
+.event-card {
+  display: inline-block;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 20px;
+}
+
+.event-details h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  background-color: #6b1b9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background-color: #501275;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #555;
+}
+
+.close:hover {
+  color: red;
+}
+
+.countdown h3 {
+  margin-top: 15px;
+  color: #6b1b9a;
+}
+
+#countdown {
+  font-size: 1.4rem;
+  color: #ff4d4d;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 /* Divider line between h1 and p */
 .caption-divider {
   border: none;
