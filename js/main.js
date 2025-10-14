@@ -47,3 +47,18 @@ const timer = setInterval(() => {
 
   countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
+
+/*====================== scroll reveal ======================*/
+ScrollReveal({
+  // reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
+
+ScrollReveal().reveal(".fromTop", { origin: "top" });
+ScrollReveal().reveal(".fromBottom", { origin: "bottom" });
+ScrollReveal().reveal(".fromLeft", {
+  origin: "left",
+});
+ScrollReveal().reveal(".fromRight", { origin: "right" });
