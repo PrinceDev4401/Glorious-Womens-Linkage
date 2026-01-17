@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/Glorious women Logowith white.jpg"
+    />
+    <title>Events || Glorious Women's Linkage</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Bootstrap Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/cropped-web-icon.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROGRAMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RESOURCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">EVENTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="btn btn-warning dropdown-toggle ms-2"
+                href="#"
+                id="getInvolvedDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                GET INVOLVED
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/tnHkKY8CEYK6c3mT7"
+                    >JOIN AS A MEMBER</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/eRer3xSBqqKkGK4X8"
+                    >VOLUNTEER</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/sBum5FGAemFGmfpJ7"
+                    >PARTNER WITH US</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">DONATE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="upcoming-event">
+      <h2 class="text-uppercase fromRight">Upcoming Event</h2>
+      <div class="event-card fromBottom">
+        <img
+          src="images/Relationship and Marriage Seminar.jpg"
+          alt="Street Evangelism"
+        />
+        <div class="event-details">
+          <h3 class="text-uppercase">Relationship & Marriage Seminar</h3>
+          <p><strong>Date:</strong> 13th February 2026</p>
+          <p><strong>Time:</strong> 7:30 PM</p>
+          <button class="read-more" onclick="openModal()">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div id="eventModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img
+          src="images/Relationship and Marriage Seminar.jpg"
+          alt="Street Evangelism"
+        />
+        <h2 class="text-uppercase">Relationship & Marriage Seminar</h2>
+        <p><strong>Date:</strong> 13th February 2026</p>
+        <p><strong>Time:</strong> 7:30 PM</p>
+        <p><strong>Venue:</strong> Zoom</p>
+        <p>
+          Join us for an impactful Relationship & Marriage Seminar focused on
+          building healthy relationships, strengthening marriages, and nurturing
+          love, commitment, and understanding.
+        </p>
+        <p><strong>For More Info:</strong> 0591055335 / 0550409059</p>
+
+        <div class="countdown text-uppercase">
+          <h3>Countdown to Event</h3>
+          <p id="countdown"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo & About -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="fw-bold text-light mb-3 text-uppercase">Glowlink</h4>
+            <p>
+              Glorious Women’s Linkage is committed to empowering women and
+              transforming communities through leadership, education, and
+              humanitarian support.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="fw-bold mb-3 text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Programs</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Events</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3 text-uppercase">Connect With Us</h5>
+            <div class="d-flex gap-3">
+              <a
+                href="https://facebook.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a
+                href="https://youtube.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="bx bxl-youtube"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Email"
+              >
+                <i class="bx bxl-gmail"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="text-center mt-4 border-top pt-3">
+          <p class="mb-0">
+            &copy; 2026 Glorious Women’s Linkage (Glowlink). All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
