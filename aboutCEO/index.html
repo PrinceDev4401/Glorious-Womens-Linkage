@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet Mrs. Rosemond Köhler, CEO/President of Glorious Women's Linkage (GLOWLINK) — global leader, mentor, philanthropist, and author."
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/Glorious women Logowith white.jpg"
+    />
+    <title>About CEO || Glorious Women's Linkage</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      :root {
+        --glow-navy: #1a2b6d;
+        --glow-navy-dark: #101c4a;
+        --glow-gold: #ffc107;
+        --glow-bg: #f8f9fb;
+      }
+
+      body {
+        background-color: var(--glow-bg);
+        color: #333;
+        line-height: 1.7;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* ---------- Page hero ---------- */
+      .ceo-hero {
+        background: linear-gradient(
+          135deg,
+          var(--glow-navy) 0%,
+          var(--glow-navy-dark) 100%
+        );
+        color: #fff;
+        padding: 70px 20px 90px;
+        text-align: center;
+      }
+
+      .ceo-hero h1 {
+        font-size: clamp(1.7rem, 4vw, 2.6rem);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .ceo-hero .accent {
+        color: var(--glow-gold);
+      }
+
+      .ceo-hero p {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.08rem;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      /* ---------- Profile card ---------- */
+      .ceo-profile {
+        margin-top: -55px;
+      }
+
+      .profile-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 10px 34px rgba(16, 28, 74, 0.12);
+        overflow: hidden;
+      }
+
+      .profile-card .photo-col img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-height: 320px;
+      }
+
+      .profile-card .bio-col {
+        padding: 35px 35px 30px;
+      }
+
+      .profile-card h2 {
+        color: var(--glow-navy);
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 4px;
+      }
+
+      .profile-card .role {
+        color: #b8860b;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+
+      .credential-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .credential-badges span {
+        background: rgba(26, 43, 109, 0.07);
+        color: var(--glow-navy);
+        font-size: 0.78rem;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 6px 14px;
+      }
+
+      /* ---------- Sections ---------- */
+      .ceo-section {
+        padding: 60px 20px;
+      }
+
+      .ceo-section.alt {
+        background-color: #fff;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        color: var(--glow-navy);
+        font-weight: 700;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 55px;
+        height: 4px;
+        background: var(--glow-gold);
+        border-radius: 2px;
+        margin-top: 8px;
+      }
+
+      /* ---------- Education / values cards ---------- */
+      .info-card {
+        background: var(--glow-bg);
+        border-left: 5px solid var(--glow-gold);
+        border-radius: 10px;
+        padding: 22px 24px;
+        height: 100%;
+      }
+
+      .info-card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--glow-navy);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .info-card h3 i {
+        color: var(--glow-gold);
+        font-size: 1.3rem;
+      }
+
+      .info-card p {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 0;
+      }
+
+      /* ---------- Timeline ---------- */
+      .timeline {
+        position: relative;
+        margin-top: 30px;
+        padding-left: 30px;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 9px;
+        top: 6px;
+        bottom: 6px;
+        width: 3px;
+        background: rgba(26, 43, 109, 0.15);
+        border-radius: 2px;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-bottom: 32px;
+      }
+
+      .timeline-item:last-child {
+        padding-bottom: 0;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -28px;
+        top: 6px;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background: var(--glow-gold);
+        border: 4px solid #fff;
+        box-shadow: 0 0 0 3px rgba(26, 43, 109, 0.2);
+      }
+
+      .timeline-item .year-badge {
+        display: inline-block;
+        background: var(--glow-navy);
+        color: var(--glow-gold);
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        border-radius: 50px;
+        padding: 4px 16px;
+        margin-bottom: 10px;
+      }
+
+      .timeline-item h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--glow-navy);
+        margin-bottom: 8px;
+      }
+
+      .timeline-item p {
+        color: #555;
+        font-size: 0.97rem;
+        margin-bottom: 10px;
+      }
+
+      /* ---------- Closing quote ---------- */
+      .closing-quote {
+        background: linear-gradient(
+          135deg,
+          var(--glow-navy) 0%,
+          var(--glow-navy-dark) 100%
+        );
+        color: #fff;
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .closing-quote blockquote {
+        max-width: 780px;
+        margin: 0 auto 25px;
+        font-size: 1.25rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.92);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ============ Navbar styles: move into your css/style.css file ============ -->
+    <style>
+      .custom-navbar {
+        background: #ffffff;
+        padding: 14px 0;
+        box-shadow: 0 2px 10px rgba(16, 28, 74, 0.06);
+        transition:
+          padding 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      /* Slightly compact navbar with stronger shadow once the page is scrolled */
+      .custom-navbar.scrolled {
+        padding: 8px 0;
+        box-shadow: 0 4px 18px rgba(16, 28, 74, 0.12);
+      }
+
+      .custom-navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .custom-navbar .navbar-brand img {
+        height: 46px;
+        width: auto;
+      }
+
+      .custom-navbar .brand-text {
+        font-weight: 700;
+        font-size: 1.15rem;
+        letter-spacing: 1px;
+        color: #1a2b6d !important;
+        line-height: 1.1;
+      }
+
+      .custom-navbar .brand-text .accent {
+        color: #ffc107;
+      }
+
+      .custom-navbar .brand-text small {
+        display: block;
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: #6c757d;
+        text-transform: uppercase;
+      }
+
+      .custom-navbar .navbar-nav .nav-link {
+        color: #1a2b6d !important;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.8px;
+        padding: 8px 14px !important;
+        position: relative;
+        transition: color 0.2s ease;
+      }
+
+      /* Animated underline on hover / active */
+      .custom-navbar .navbar-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        bottom: 2px;
+        height: 2.5px;
+        background: #ffc107;
+        border-radius: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s ease;
+      }
+
+      .custom-navbar .navbar-nav .nav-link:hover,
+      .custom-navbar .navbar-nav .nav-link.active {
+        color: #101c4a !important;
+      }
+
+      .custom-navbar .navbar-nav .nav-link:hover::after,
+      .custom-navbar .navbar-nav .nav-link.active::after {
+        transform: scaleX(1);
+      }
+
+      /* Get Involved button */
+      .custom-navbar .btn-get-involved {
+        background: #ffc107;
+        color: #1a2b6d;
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.8px;
+        border: none;
+        border-radius: 50px;
+        padding: 9px 22px;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .custom-navbar .btn-get-involved:hover,
+      .custom-navbar .btn-get-involved:focus {
+        background: #e5ad00;
+        color: #101c4a;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(255, 193, 7, 0.35);
+      }
+
+      /* Dropdown */
+      .custom-navbar .dropdown-menu {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(16, 28, 74, 0.15);
+        padding: 8px;
+        margin-top: 10px;
+        min-width: 220px;
+      }
+
+      .custom-navbar .dropdown-item {
+        font-size: 0.83rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: #1a2b6d;
+        border-radius: 8px;
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+
+      .custom-navbar .dropdown-item i {
+        color: #ffc107;
+        font-size: 1.05rem;
+      }
+
+      .custom-navbar .dropdown-item:hover {
+        background: rgba(255, 193, 7, 0.14);
+        color: #101c4a;
+      }
+
+      .custom-navbar .dropdown-divider {
+        margin: 6px 8px;
+      }
+
+      /* Mobile toggler */
+      .custom-navbar .navbar-toggler {
+        border: none;
+        padding: 6px 8px;
+      }
+
+      .custom-navbar .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.4);
+      }
+
+      @media (max-width: 991.98px) {
+        .custom-navbar .navbar-nav {
+          padding: 12px 0 6px;
+        }
+
+        .custom-navbar .navbar-nav .nav-link::after {
+          display: none;
+        }
+
+        .custom-navbar .btn-get-involved {
+          margin: 10px 14px 4px;
+          display: inline-block;
+        }
+      }
+    </style>
+
+    <!-- ============ Navbar ============ -->
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="/images/Glorious women Logo.png" alt="GLOWLINK logo" />
+          <span class="brand-text">
+            GLOW<span class="accent">LINK</span>
+            <small>Glorious Women’s Linkage</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../programs/index.html">PROGRAMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RESOURCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../events/index.html">EVENTS</a>
+            </li>
+            <li class="nav-item dropdown ms-lg-2">
+              <a
+                class="btn btn-get-involved dropdown-toggle"
+                href="#"
+                id="getInvolvedDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                GET INVOLVED
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="getInvolvedDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/tnHkKY8CEYK6c3mT7"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-user-plus"></i>Join as a Member
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/eRer3xSBqqKkGK4X8"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-heart"></i>Volunteer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/sBum5FGAemFGmfpJ7"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-handshake"></i>Partner With Us
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bx bx-donate-heart"></i>Donate
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Compacts the navbar after scrolling: place just before the closing body tag -->
+    <script>
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 40);
+      });
+    </script>
+
+    <!-- Hero -->
+    <header class="ceo-hero">
+      <div class="container">
+        <h1>Meet Our <span class="accent">CEO &amp; President</span></h1>
+        <p>
+          The visionary leadership behind Glorious Women’s Linkage (GLOWLINK)
+          and its mission to empower girls and women across Africa and beyond.
+        </p>
+      </div>
+    </header>
+
+    <!-- Profile card -->
+    <section class="ceo-profile">
+      <div class="container">
+        <div class="profile-card">
+          <div class="row g-0">
+            <div class="col-md-4 photo-col">
+              <img
+                src="../images/Untitled-design-pwgxpgtsgtgudyc3pwhyf7mb71f21bj5hby98yglz4.png"
+                alt="Mrs. Rosemond Köhler, CEO of GLOWLINK"
+              />
+            </div>
+            <div class="col-md-8 bio-col">
+              <h2>Mrs. Rosemond Köhler</h2>
+              <div class="role">CEO / President — GLOWLINK</div>
+              <div class="credential-badges">
+                <span>YALI Member</span>
+                <span>Global Woman Club</span>
+                <span>WISE Community</span>
+                <span>UN Women</span>
+                <span>Global TEF Guild Mentor</span>
+                <span>President, ACEA Ghana</span>
+              </div>
+              <p>
+                Mrs. Rosemond Köhler is the CEO/President of Glorious Women’s
+                Linkage (GLOWLINK). A global leader, mentor to women,
+                philanthropist, and author, she is an Alumna of the African
+                Civic Engagement Academy (ACEA) and now serves as President of
+                ACEA Ghana.
+              </p>
+              <p>
+                Rosemond is a voice for the voiceless women in society, with
+                respect and dignity for all people. She desires to work for a
+                better world — one where women discover themselves, live
+                empowered lives, and lift others as they rise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & values -->
+    <section class="ceo-section">
+      <div class="container">
+        <h2 class="section-title">Education &amp; Values</h2>
+        <div class="row g-4 mt-1">
+          <div class="col-md-6">
+            <div class="info-card">
+              <h3><i class="bx bxs-graduation"></i>Academic Background</h3>
+              <p>
+                Holds a Bachelor’s Degree in Management Studies from the
+                University of Cape Coast, and a Master’s Degree in Insurance and
+                Business Continuity from the Kwame Nkrumah University of Science
+                and Technology, specializing in disaster recovery and strategic
+                planning that helps organizations minimize loss and disruption.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h3><i class="bx bxs-star"></i>Core Values</h3>
+              <p>
+                Focused on achieving her goals, she believes in integrity,
+                consistency, persistence, and resilience. A responsible and
+                organized leader with a high capacity for teamwork, she adjusts
+                easily to change and works well under pressure — dedicated to
+                developing the organization with experience and integrity.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="info-card">
+              <h3><i class="bx bxs-heart"></i>Her Passion</h3>
+              <p>
+                She yearns to see the youth become responsible citizens, nation
+                builders, and world changers — passionate about seeing them
+                contribute their quota to the development of the nation and the
+                world. She is a revivalist to humanity and to women in general.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects timeline -->
+    <section class="ceo-section alt">
+      <div class="container">
+        <h2 class="section-title">Projects of GLOWLINK &amp; Their Impact</h2>
+        <p class="mt-3">
+          GLOWLINK focuses on mentoring girls and women, educating them to press
+          for progress in every endeavour of their lives, occupy their places in
+          life, and stay focused in the pursuit of their goals. From its
+          establishment to date, the organization has mentored
+          <strong>five thousand (5,000) girls and women</strong>, transforming
+          the lives of many people — including its own members.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year-badge">2016</span>
+            <h3>Mentorship Programme — Cape Coast</h3>
+            <p>
+              Organized a mentorship programme in the Central Region of Ghana to
+              educate one hundred (100) students on the importance of
+              self-identity and how to achieve excellent results.
+            </p>
+            <h3>Street Donations — Tema Station, Accra</h3>
+            <p>
+              Donated sanitary products and food items to head potters, and
+              invited specialists to encourage them to pursue their dreams
+              irrespective of gender, alongside education on sanitation.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="year-badge">2017</span>
+            <h3>School Outreach — Ashanti Region</h3>
+            <p>
+              Visited Anglican Junior High School and Riverside Academy to
+              educate three hundred (300) girls on effective study habits and
+              overcoming low self-esteem, followed by donations of exercise
+              books, textbooks, and stationery.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="year-badge">2018</span>
+            <h3>Back-to-School &amp; Anti-Early-Marriage Campaign</h3>
+            <p>
+              Helped two thousand (2,000) girls return to school through
+              educational seminars, and held an empowerment outreach in the
+              Northern Region — including vocational training for one hundred
+              and fifty (150) parents of early-marriage victims to give them
+              financial independence.
+            </p>
+            <h3>Entrepreneurship Training — University of Cape Coast</h3>
+            <p>
+              Trained one thousand (1,000) widows, single mothers, and youths
+              with income-generating skills to reduce unemployment and social
+              vices.
+            </p>
+            <h3>Health Outreach — Nima, Accra</h3>
+            <p>
+              Educated the community on sanitation and hygienic living, and
+              screened over three hundred (300) women for hepatitis B, diabetes,
+              and breast cancer.
+            </p>
+            <h3>Orphanage &amp; Prison Visits</h3>
+            <p>
+              Dined with one hundred (100) orphans at New Life Orphanage in
+              Nungua, and visited Ankaful Prison in Cape Coast to dine with the
+              prisoners and share the word of God (November 2018).
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="year-badge">2019</span>
+            <h3>Nsawam Prison Donation</h3>
+            <p>
+              Supported four hundred (400) prisoners with basic needs and
+              provided healthcare products for female inmates. GLOWLINK
+              continues to seek support from pharmaceutical companies and
+              individuals to supply needed medications to prisoners and other
+              less-privileged people.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="year-badge">2020</span>
+            <h3>Virtual Empowerment During COVID-19</h3>
+            <p>
+              When the pandemic halted physical activities, GLOWLINK innovated
+              by moving programmes online — hosting virtual conferences with
+              globally invited speakers to help members and women overcome fear
+              and panic.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="year-badge">2021</span>
+            <h3>Menstrual Education — Jakobu Community, Ashanti Region</h3>
+            <p>
+              Educated girls from ten (10) schools on the use of sanitary pads
+              and healthy menstrual practices, alongside a talk on the
+              importance of education (August 2021).
+            </p>
+            <h3>Elderly Care — Tabitha Aged Care Center, Afiama</h3>
+            <p>
+              Donated food items and toiletries to one hundred (100) aged men
+              and women and shared the word of God with them (November 2021).
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="year-badge">2022</span>
+            <h3>First Annual Conference</h3>
+            <p>
+              Held in January 2022 to empower women globally about their
+              potential — a great success with global speakers on board.
+            </p>
+            <h3>GLOBE4HER Summit</h3>
+            <p>
+              Held in May 2022 with speakers including Dr. Joyce Aryee, Mrs.
+              Comfort Ocran, Madam Catherine Krobo Edusie, and Ms. Valarie Waswa
+              (a Kenyan lawyer), educating girls and women on the importance of
+              making impact globally.
+            </p>
+            <h3>Mentorship &amp; Menstrual Advocacy — Aseseeso</h3>
+            <p>
+              A mentorship programme with menstrual advocacy and donations at
+              Aseseeso in the Okere District, Eastern Region — educating girls,
+              parents, and the youth, including awareness on the dangers of drug
+              abuse rising in the community.
+            </p>
+            <h3>Accra Psychiatric Hospital Donation</h3>
+            <p>
+              Donation of sanitary items, foodstuffs, and toiletries to support
+              people with mental illness, with worship and prayers for their
+              recovery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media & ongoing programmes -->
+    <section class="ceo-section">
+      <div class="container">
+        <h2 class="section-title">Media &amp; Ongoing Programmes</h2>
+        <div class="row g-4 mt-1">
+          <div class="col-md-6">
+            <div class="info-card">
+              <h3><i class="bx bx-broadcast"></i>Media Engagements</h3>
+              <p>
+                GLOWLINK has featured on talk shows across Ghana — including Y
+                FM, Orange FM, Okay FM, Hello FM, Sharp FM, Spirit FM, and
+                Kessben TV — speaking on teenage pregnancy, self-identity, the
+                temperament of women and girls, and igniting leadership skills
+                in women, using every opportunity to educate the public.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h3><i class="bx bx-map-alt"></i>Regional Conferences</h3>
+              <p>
+                With members all over the country, annual regional conferences
+                enable members to meet physically in their regions, get
+                acquainted, and be empowered with leadership skills they use to
+                mentor other young ladies and girls.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="info-card">
+              <h3>
+                <i class="bx bx-calendar-week"></i>Weekly Member Activities
+              </h3>
+              <p>
+                Members are taken through Bible study and prayer on Tuesdays and
+                Thursdays, led by groups on a rotating schedule to meet their
+                spiritual needs. Saturdays feature presentations by members or
+                invited guests on education, health, entrepreneurship,
+                self-confidence, marriage, parenting, and more. On Sundays,
+                members share what they learned at church, and daily devotions
+                are shared to help members start their day on a good note.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing vision -->
+    <section class="closing-quote">
+      <div class="container">
+        <blockquote>
+          “I aspire to see GLOWLINK reach out to as many people as possible all
+          over the world — recruiting country directors across Africa so that
+          many girls, women, and even men can benefit from the impact we are
+          making in the lives of people.”
+        </blockquote>
+        <a
+          href="https://forms.gle/tnHkKY8CEYK6c3mT7"
+          class="btn btn-warning btn-lg fw-semibold"
+          >Join the Movement</a
+        >
+      </div>
+    </section>
+
+    <!-- ============ Footer styles: move into your css/style.css file ============ -->
+    <style>
+      .site-footer {
+        background: linear-gradient(180deg, #14204f 0%, #0d1533 100%);
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.95rem;
+      }
+
+      .site-footer .footer-top {
+        padding: 60px 0 40px;
+      }
+
+      .site-footer .footer-brand {
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #fff;
+      }
+
+      .site-footer .footer-brand .accent {
+        color: #ffc107;
+      }
+
+      .site-footer .footer-heading {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .site-footer .footer-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 32px;
+        height: 3px;
+        background: #ffc107;
+        border-radius: 2px;
+      }
+
+      .site-footer .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .site-footer .footer-links a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        transition:
+          color 0.2s ease,
+          padding-left 0.2s ease;
+      }
+
+      .site-footer .footer-links a:hover {
+        color: #ffc107;
+        padding-left: 5px;
+      }
+
+      .site-footer .footer-links a i {
+        font-size: 0.8rem;
+        margin-right: 6px;
+        color: #ffc107;
+      }
+
+      .site-footer .footer-contact li {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+      }
+
+      .site-footer .footer-contact i {
+        color: #ffc107;
+        font-size: 1.1rem;
+        margin-top: 3px;
+      }
+
+      .site-footer .footer-contact a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+      }
+
+      .site-footer .footer-contact a:hover {
+        color: #ffc107;
+      }
+
+      .site-footer .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        font-size: 1.15rem;
+        text-decoration: none;
+        transition:
+          background 0.25s ease,
+          transform 0.25s ease,
+          color 0.25s ease;
+      }
+
+      .site-footer .social-icons a:hover {
+        background: #ffc107;
+        color: #14204f;
+        transform: translateY(-3px);
+      }
+
+      .site-footer .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 18px 0;
+        font-size: 0.88rem;
+      }
+
+      .site-footer .footer-bottom a {
+        color: rgba(255, 255, 255, 0.65);
+        text-decoration: none;
+      }
+
+      .site-footer .footer-bottom a:hover {
+        color: #ffc107;
+      }
+
+      .back-to-top {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #ffc107;
+        color: #14204f;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        text-decoration: none;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        transition: transform 0.25s ease;
+        z-index: 1030;
+      }
+
+      .back-to-top:hover {
+        transform: translateY(-3px);
+        color: #14204f;
+      }
+    </style>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-5">
+            <!-- Brand & Mission -->
+            <div class="col-lg-4 col-md-6">
+              <h4 class="footer-brand mb-3">
+                GLOW<span class="accent">LINK</span>
+              </h4>
+              <p class="mb-4">
+                Glorious Women’s Linkage is committed to empowering women and
+                transforming communities through leadership, education, and
+                humanitarian support — across Ghana, Africa, and beyond.
+              </p>
+              <div class="social-icons d-flex gap-2">
+                <a
+                  href="https://www.facebook.com/glowlinkage"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/glowlinkage/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a
+                  href="https://x.com/glowlinkage"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/77862248/admin/page-posts/published/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@gloriouslegacytv3382"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="YouTube"
+                  ><i class="bx bxl-youtube"></i
+                ></a>
+                <a
+                  href="mailto:gloriouswomenslinkage22@gmail.com"
+                  aria-label="Email"
+                  ><i class="bx bx-envelope"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+              <h5 class="footer-heading">Quick Links</h5>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a href="../index.html"
+                    ><i class="bx bx-chevron-right"></i>Home</a
+                  >
+                </li>
+                <li>
+                  <a href="../about/index.html"
+                    ><i class="bx bx-chevron-right"></i>About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="../programs/index.html"
+                    ><i class="bx bx-chevron-right"></i>Programs</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="bx bx-chevron-right"></i>Resources</a>
+                </li>
+                <li>
+                  <a href="../events/index.html"
+                    ><i class="bx bx-chevron-right"></i>Events</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Get Involved -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="footer-heading">Get Involved</h5>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a
+                    href="https://forms.gle/tnHkKY8CEYK6c3mT7"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bx bx-chevron-right"></i>Join as a Member</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://forms.gle/eRer3xSBqqKkGK4X8"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bx bx-chevron-right"></i>Volunteer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://forms.gle/sBum5FGAemFGmfpJ7"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bx bx-chevron-right"></i>Partner With Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="bx bx-chevron-right"></i>Donate</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="footer-heading">Contact Us</h5>
+              <ul class="list-unstyled footer-contact">
+                <li>
+                  <i class="bx bx-map"></i>
+                  <span>Accra, Ghana</span>
+                </li>
+                <li>
+                  <i class="bx bx-envelope"></i>
+                  <a href="mailto:gloriouswomenslinkage22@gmail.com"
+                    >gloriouswomenslinkage22@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-phone"></i>
+                  <a href="tel:+233553438616">+233 55 343 8616</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+        >
+          <p class="mb-0">
+            &copy; <span id="footer-year">2026</span> Glorious Women’s Linkage
+            (GLOWLINK). All rights reserved.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <i class="bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Keeps the copyright year current automatically -->
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

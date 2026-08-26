@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GLOWLINK AID (GlowAid) — the humanitarian department of Glorious Women's Linkage (GLOWLINK), supporting the needy and less privileged through outreaches and donation exercises across Ghana."
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/Glorious women Logowith white.jpg"
+    />
+    <title>GlowLinkAid || Glorious Women's Linkage</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      :root {
+        --glow-navy: #1a2b6d;
+        --glow-navy-dark: #101c4a;
+        --glow-gold: #ffc107;
+        --glow-bg: #f8f9fb;
+      }
+
+      body {
+        background-color: var(--glow-bg);
+        color: #333;
+        line-height: 1.7;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* ---------- Hero ---------- */
+      .dept-hero {
+        background: linear-gradient(
+          135deg,
+          var(--glow-navy) 0%,
+          var(--glow-navy-dark) 100%
+        );
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px 70px;
+      }
+
+      .dept-hero .eyebrow {
+        color: var(--glow-gold);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+      }
+
+      .dept-hero h1 {
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .dept-hero p {
+        max-width: 680px;
+        margin: 14px auto 0;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .hero-divider {
+        width: 70px;
+        border: 2px solid var(--glow-gold);
+        opacity: 1;
+        margin: 18px auto 0;
+      }
+
+      /* ---------- Sections ---------- */
+      .dept-section {
+        padding: 70px 20px;
+      }
+
+      .dept-section.alt {
+        background-color: #fff;
+      }
+
+      .section-title {
+        font-size: 1.7rem;
+        color: var(--glow-navy);
+        font-weight: 700;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 55px;
+        height: 4px;
+        background: var(--glow-gold);
+        border-radius: 2px;
+        margin-top: 8px;
+      }
+
+      .section-head {
+        text-align: center;
+        margin-bottom: 45px;
+      }
+
+      .section-head .section-title::after {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .section-head p {
+        color: #777;
+        max-width: 640px;
+        margin: 10px auto 0;
+      }
+
+      /* ---------- Head profile ---------- */
+      .head-photo img {
+        width: 100%;
+        max-width: 360px;
+        border-radius: 16px;
+        box-shadow: 0 12px 32px rgba(16, 28, 74, 0.18);
+        object-fit: cover;
+      }
+
+      .head-card {
+        background: #fff;
+        border: 1px solid #eef0f6;
+        border-radius: 14px;
+        padding: 18px 22px;
+        margin-top: -28px;
+        position: relative;
+        box-shadow: 0 10px 26px rgba(16, 28, 74, 0.12);
+        display: inline-block;
+      }
+
+      .head-card .role {
+        color: #b8860b;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+      }
+
+      .head-card .name {
+        color: var(--glow-navy);
+        font-weight: 700;
+        font-size: 1.05rem;
+        margin-bottom: 2px;
+      }
+
+      .head-card .title {
+        color: #777;
+        font-size: 0.88rem;
+        margin-bottom: 0;
+      }
+
+      .about-copy p {
+        color: #555;
+      }
+
+      /* ---------- Support categories ---------- */
+      .support-card {
+        background: #fff;
+        border: 1px solid #eef0f6;
+        border-radius: 14px;
+        padding: 28px 24px;
+        height: 100%;
+        text-align: center;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .support-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 34px rgba(16, 28, 74, 0.14);
+      }
+
+      .support-card i {
+        font-size: 1.9rem;
+        color: var(--glow-navy);
+        background: rgba(255, 193, 7, 0.2);
+        border-radius: 12px;
+        padding: 12px;
+        display: inline-flex;
+        margin-bottom: 14px;
+      }
+
+      .support-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--glow-navy);
+        margin-bottom: 10px;
+      }
+
+      .support-card p {
+        color: #666;
+        font-size: 0.92rem;
+        margin-bottom: 0;
+      }
+
+      /* ---------- Activities ---------- */
+      .activity-item {
+        background: #fff;
+        border: 1px solid #eef0f6;
+        border-left: 4px solid var(--glow-gold);
+        border-radius: 12px;
+        padding: 24px 26px;
+        height: 100%;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .activity-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(16, 28, 74, 0.12);
+      }
+
+      .activity-item i {
+        font-size: 1.6rem;
+        color: var(--glow-navy);
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+
+      .activity-item h3 {
+        font-size: 1.02rem;
+        font-weight: 700;
+        color: var(--glow-navy);
+        margin-bottom: 8px;
+      }
+
+      .activity-item p {
+        color: #666;
+        font-size: 0.93rem;
+        margin-bottom: 0;
+      }
+
+      /* ---------- CTA ---------- */
+      .dept-cta {
+        background: linear-gradient(
+          135deg,
+          var(--glow-navy) 0%,
+          var(--glow-navy-dark) 100%
+        );
+        color: #fff;
+        text-align: center;
+        padding: 70px 20px;
+      }
+
+      .dept-cta h2 {
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .dept-cta p {
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 600px;
+        margin: 0 auto 26px;
+      }
+
+      .btn-cta {
+        background: var(--glow-gold);
+        color: var(--glow-navy);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        border: none;
+        border-radius: 50px;
+        padding: 12px 34px;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .btn-cta:hover {
+        background: #e5ad00;
+        color: var(--glow-navy-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ============ Navbar styles: move into your css/style.css file ============ -->
+    <style>
+      .custom-navbar {
+        background: #ffffff;
+        padding: 14px 0;
+        box-shadow: 0 2px 10px rgba(16, 28, 74, 0.06);
+        transition:
+          padding 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      /* Slightly compact navbar with stronger shadow once the page is scrolled */
+      .custom-navbar.scrolled {
+        padding: 8px 0;
+        box-shadow: 0 4px 18px rgba(16, 28, 74, 0.12);
+      }
+
+      .custom-navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .custom-navbar .navbar-brand img {
+        height: 46px;
+        width: auto;
+      }
+
+      .custom-navbar .brand-text {
+        font-weight: 700;
+        font-size: 1.15rem;
+        letter-spacing: 1px;
+        color: #1a2b6d !important;
+        line-height: 1.1;
+      }
+
+      .custom-navbar .brand-text .accent {
+        color: #ffc107;
+      }
+
+      .custom-navbar .brand-text small {
+        display: block;
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: #6c757d;
+        text-transform: uppercase;
+      }
+
+      .custom-navbar .navbar-nav .nav-link {
+        color: #1a2b6d !important;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.8px;
+        padding: 8px 14px !important;
+        position: relative;
+        transition: color 0.2s ease;
+      }
+
+      /* Animated underline on hover / active */
+      .custom-navbar .navbar-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        bottom: 2px;
+        height: 2.5px;
+        background: #ffc107;
+        border-radius: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s ease;
+      }
+
+      .custom-navbar .navbar-nav .nav-link:hover,
+      .custom-navbar .navbar-nav .nav-link.active {
+        color: #101c4a !important;
+      }
+
+      .custom-navbar .navbar-nav .nav-link:hover::after,
+      .custom-navbar .navbar-nav .nav-link.active::after {
+        transform: scaleX(1);
+      }
+
+      /* Get Involved button */
+      .custom-navbar .btn-get-involved {
+        background: #ffc107;
+        color: #1a2b6d;
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.8px;
+        border: none;
+        border-radius: 50px;
+        padding: 9px 22px;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .custom-navbar .btn-get-involved:hover,
+      .custom-navbar .btn-get-involved:focus {
+        background: #e5ad00;
+        color: #101c4a;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(255, 193, 7, 0.35);
+      }
+
+      /* Dropdown */
+      .custom-navbar .dropdown-menu {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(16, 28, 74, 0.15);
+        padding: 8px;
+        margin-top: 10px;
+        min-width: 220px;
+      }
+
+      .custom-navbar .dropdown-item {
+        font-size: 0.83rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: #1a2b6d;
+        border-radius: 8px;
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+
+      .custom-navbar .dropdown-item i {
+        color: #ffc107;
+        font-size: 1.05rem;
+      }
+
+      .custom-navbar .dropdown-item:hover {
+        background: rgba(255, 193, 7, 0.14);
+        color: #101c4a;
+      }
+
+      .custom-navbar .dropdown-divider {
+        margin: 6px 8px;
+      }
+
+      /* Mobile toggler */
+      .custom-navbar .navbar-toggler {
+        border: none;
+        padding: 6px 8px;
+      }
+
+      .custom-navbar .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.4);
+      }
+
+      @media (max-width: 991.98px) {
+        .custom-navbar .navbar-nav {
+          padding: 12px 0 6px;
+        }
+
+        .custom-navbar .navbar-nav .nav-link::after {
+          display: none;
+        }
+
+        .custom-navbar .btn-get-involved {
+          margin: 10px 14px 4px;
+          display: inline-block;
+        }
+      }
+    </style>
+
+    <!-- ============ Navbar ============ -->
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/Glorious women Logo.png" alt="GLOWLINK logo" />
+          <span class="brand-text">
+            GLOW<span class="accent">LINK</span>
+            <small>Glorious Women’s Linkage</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/index.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../programs/index.html">PROGRAMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RESOURCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../events/index.html">EVENTS</a>
+            </li>
+            <li class="nav-item dropdown ms-lg-2">
+              <a
+                class="btn btn-get-involved dropdown-toggle"
+                href="#"
+                id="getInvolvedDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                GET INVOLVED
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="getInvolvedDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/tnHkKY8CEYK6c3mT7"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-user-plus"></i>Join as a Member
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/eRer3xSBqqKkGK4X8"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-heart"></i>Volunteer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/sBum5FGAemFGmfpJ7"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-handshake"></i>Partner With Us
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bx bx-donate-heart"></i>Donate
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Compacts the navbar after scrolling: place just before the closing body tag -->
+    <script>
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 40);
+      });
+    </script>
+
+    <!-- Hero -->
+    <header class="dept-hero">
+      <div class="container">
+        <div class="eyebrow">Our Departments</div>
+        <h1>GLOWLINK AID <span style="opacity: 0.85">(GlowAid)</span></h1>
+        <hr class="hero-divider" />
+        <p>
+          A source of help to the needy and less privileged in our society —
+          offering practical support, fostering hope, and sharing the love of
+          God through giving.
+        </p>
+      </div>
+    </header>
+
+    <!-- Department head + about -->
+    <section class="dept-section alt">
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <!-- Left: Image -->
+          <div class="col-md-4 text-center head-photo">
+            <img src="../images/Leader3.jpg" alt="Madam Antoinette Hiagbe" />
+            <div class="head-card text-start">
+              <div class="role">Department Head</div>
+              <div class="name">Madam Antoinette Hiagbe</div>
+              <p class="title">Experienced Teacher &amp; Program Director</p>
+            </div>
+          </div>
+
+          <!-- Right: Content -->
+          <div class="col-md-8 about-copy">
+            <h2 class="section-title">About the Department</h2>
+            <p>
+              Madam Antoinette Hiagbe has been working with the Ghana Education
+              Service as a teacher for almost two decades. She believes in
+              making a lasting impact on all children who undergo her tutelage
+              &mdash; a passion she brings to her work in leading outreaches and
+              giving exercises within the nation, building both the mind and the
+              soul. She is also a proud board member of this organization.
+            </p>
+            <p>
+              This department seeks to be a source of help to the needy and less
+              privileged in our society, as stated in the core values of the
+              ministry. As Christians, it is our duty to love all equally,
+              respect the self-worth of every human being, and to help those in
+              need just as Jesus did while on earth.
+            </p>
+            <p>
+              Over the past few years, GlowAid has organized donation exercises
+              to head porters (kayayei), orphanages, and prisons in Ghana. By
+              doing this, we hope to share the love of God with mankind and
+              cause them to draw closer to Christ as they come to know Him
+              personally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our foundation -->
+    <section class="dept-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">What Drives Us</h2>
+          <p>
+            Our giving is rooted in the core values of the ministry and the
+            example of Christ.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="support-card">
+              <i class="bx bx-heart"></i>
+              <h3>Love All Equally</h3>
+              <p>
+                We believe it is our duty to love all people equally, regardless
+                of their circumstances or background.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="support-card">
+              <i class="bx bx-user-check"></i>
+              <h3>Respect Self-Worth</h3>
+              <p>
+                We respect the self-worth of every human being, treating each
+                person with dignity and compassion.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="support-card">
+              <i class="bx bx-hand-up"></i>
+              <h3>Help Those in Need</h3>
+              <p>
+                We help those in need just as Jesus did while on earth &mdash;
+                giving practically, generously, and consistently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our outreaches -->
+    <section class="dept-section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Our Outreaches</h2>
+          <p>
+            Over the past few years, GlowAid has organized donation exercises
+            across Ghana, reaching:
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="activity-item">
+              <i class="bx bx-basket"></i>
+              <h3>Head Porters (Kayayei)</h3>
+              <p>
+                Donation and support exercises for head porters, easing their
+                daily burdens and sharing hope with women who work tirelessly to
+                survive.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="activity-item">
+              <i class="bx bx-home-heart"></i>
+              <h3>Orphanages</h3>
+              <p>
+                Visits and donations to orphanages, providing essential supplies
+                and showing love to children in need of care and belonging.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="activity-item">
+              <i class="bx bx-building-house"></i>
+              <h3>Prisons</h3>
+              <p>
+                Outreach and giving exercises in prisons, ministering to both
+                the mind and the soul and pointing lives toward restoration in
+                Christ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="dept-cta">
+      <div class="container">
+        <h2>Be Someone's Answered Prayer</h2>
+        <p>
+          Your partnership and support help GlowAid reach more of the needy and
+          less privileged across Ghana. Join us in giving hope.
+        </p>
+        <a
+          href="https://forms.gle/sBum5FGAemFGmfpJ7"
+          class="btn btn-cta btn-lg"
+          target="_blank"
+          rel="noopener"
+          >Partner With Us</a
+        >
+      </div>
+    </section>
+
+    <style>
+      .site-footer {
+        background: linear-gradient(180deg, #14204f 0%, #0d1533 100%);
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.95rem;
+      }
+
+      .site-footer .footer-top {
+        padding: 60px 0 40px;
+      }
+
+      .site-footer .footer-brand {
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #fff;
+      }
+
+      .site-footer .footer-brand .accent {
+        color: #ffc107;
+      }
+
+      .site-footer .footer-heading {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .site-footer .footer-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 32px;
+        height: 3px;
+        background: #ffc107;
+        border-radius: 2px;
+      }
+
+      .site-footer .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .site-footer .footer-links a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        transition:
+          color 0.2s ease,
+          padding-left 0.2s ease;
+      }
+
+      .site-footer .footer-links a:hover {
+        color: #ffc107;
+        padding-left: 5px;
+      }
+
+      .site-footer .footer-links a i {
+        font-size: 0.8rem;
+        margin-right: 6px;
+        color: #ffc107;
+      }
+
+      .site-footer .footer-contact li {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+      }
+
+      .site-footer .footer-contact i {
+        color: #ffc107;
+        font-size: 1.1rem;
+        margin-top: 3px;
+      }
+
+      .site-footer .footer-contact a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+      }
+
+      .site-footer .footer-contact a:hover {
+        color: #ffc107;
+      }
+
+      .site-footer .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        font-size: 1.15rem;
+        text-decoration: none;
+        transition:
+          background 0.25s ease,
+          transform 0.25s ease,
+          color 0.25s ease;
+      }
+
+      .site-footer .social-icons a:hover {
+        background: #ffc107;
+        color: #14204f;
+        transform: translateY(-3px);
+      }
+
+      .site-footer .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 18px 0;
+        font-size: 0.88rem;
+      }
+
+      .site-footer .footer-bottom a {
+        color: rgba(255, 255, 255, 0.65);
+        text-decoration: none;
+      }
+
+      .site-footer .footer-bottom a:hover {
+        color: #ffc107;
+      }
+
+      .back-to-top {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #ffc107;
+        color: #14204f;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        text-decoration: none;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        transition: transform 0.25s ease;
+        z-index: 1030;
+      }
+
+      .back-to-top:hover {
+        transform: translateY(-3px);
+        color: #14204f;
+      }
+    </style>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-5">
+            <!-- Brand & Mission -->
+            <div class="col-lg-4 col-md-6">
+              <h4 class="footer-brand mb-3">
+                GLOW<span class="accent">LINK</span>
+              </h4>
+              <p class="mb-4">
+                Glorious Women’s Linkage is committed to empowering women and
+                transforming communities through leadership, education, and
+                humanitarian support — across Ghana, Africa, and beyond.
+              </p>
+              <div class="social-icons d-flex gap-2">
+                <a
+                  href="https://www.facebook.com/glowlinkage"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/glowlinkage/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a
+                  href="https://x.com/glowlinkage"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/77862248/admin/page-posts/published/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@gloriouslegacytv3382"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="YouTube"
+                  ><i class="bx bxl-youtube"></i
+                ></a>
+                <a
+                  href="mailto:gloriouswomenslinkage22@gmail.com"
+                  aria-label="Email"
+                  ><i class="bx bx-envelope"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+              <h5 class="footer-heading">Quick Links</h5>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a href="../index.html"
+                    ><i class="bx bx-chevron-right"></i>Home</a
+                  >
+                </li>
+                <li>
+                  <a href="../about/index.html"
+                    ><i class="bx bx-chevron-right"></i>About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="../programs/index.html"
+                    ><i class="bx bx-chevron-right"></i>Programs</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="bx bx-chevron-right"></i>Resources</a>
+                </li>
+                <li>
+                  <a href="../events/index.html"
+                    ><i class="bx bx-chevron-right"></i>Events</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Get Involved -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="footer-heading">Get Involved</h5>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a
+                    href="https://forms.gle/tnHkKY8CEYK6c3mT7"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bx bx-chevron-right"></i>Join as a Member</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://forms.gle/eRer3xSBqqKkGK4X8"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bx bx-chevron-right"></i>Volunteer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://forms.gle/sBum5FGAemFGmfpJ7"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bx bx-chevron-right"></i>Partner With Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="bx bx-chevron-right"></i>Donate</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="footer-heading">Contact Us</h5>
+              <ul class="list-unstyled footer-contact">
+                <li>
+                  <i class="bx bx-map"></i>
+                  <span>Accra, Ghana</span>
+                </li>
+                <li>
+                  <i class="bx bx-envelope"></i>
+                  <a href="mailto:gloriouswomenslinkage22@gmail.com"
+                    >gloriouswomenslinkage22@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-phone"></i>
+                  <a href="tel:+233553438616">+233 55 343 8616</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+        >
+          <p class="mb-0">
+            &copy; <span id="footer-year">2026</span> Glorious Women’s Linkage
+            (GLOWLINK). All rights reserved.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <i class="bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Keeps the copyright year current automatically -->
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
